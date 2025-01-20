@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -191,7 +191,6 @@ nav li:nth-child(5) {
     display: grid;
     place-items: center;
     text-align: center;
-
     grid-template-columns: 1fr;
     grid-template-areas:
       "image"
@@ -208,5 +207,127 @@ nav li:nth-child(5) {
 
   .para {
     font-weight: 500;
+  }
+}
+
+/* Standard Curriculum Styles */
+
+.standard-text {
+  display: grid;
+  place-content: center;
+  margin-top: 50px;
+}
+.std-container {
+  display: flex;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.standard-content {
+  background: linear-gradient(135deg, #def5ff, #f2e8ff);
+  width: 367px;
+  height: 476px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.standard-content-elementary {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #fff4dc, #f2e8ff);
+  width: 367px;
+  height: 476px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.standard-content-middle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #f2e8ff, #ffffff);
+  width: 367px;
+  height: 476px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.para-standard {
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  color: #808080;
+  margin-top: 20px;
+}
+
+.btn-read-more {
+  color: #64c8ff;
+  border: none;
+  margin-top: 20px;
+}
+.btn-read-more-yellow {
+  color: #f0aa00;
+  border: none;
+  margin-top: 20px;
+}
+.btn-read-more-purple {
+  color: #8700ff;
+  border: none;
+  margin-top: 20px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.arrow-left {
+  color: white;
+  background-color: orange;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrow-right {
+  color: white;
+  background-color: orange;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Standard Curriculum Mobile Device */
+
+@media (max-width: 776px) {
+  .std-container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "elementary"
+      "middle"
+      "high";
+  }
+
+  .standard-content {
+    grid-area: elementary;
+  }
+
+  .standard-content-elementary {
+    grid-area: middle;
+  }
+
+  .standard-content-middle {
+    grid-area: high;
+  }
+
+  .arrow {
+    display: none;
   }
 }
