@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.logo {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  width: 202px;
+  height: 62px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin: auto;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: medium;
+}
+
+nav li:nth-child(2) {
+  color: orange;
+}
+nav li:nth-child(3) {
+  color: skyblue;
+}
+nav li:nth-child(4) {
+  color: #05d4df;
+}
+nav li:nth-child(5) {
+  color: #5d58ef;
+}
+
+.btn {
+  background-color: orange;
+  width: 157px;
+  height: 42px;
+  border: none;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Navbar Mobile Device */
+@media (min-width: 769px) {
+  .bars {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    width: 202px;
+    height: 62px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  nav li,
+  .btn {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    padding: 10px;
+    border: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
