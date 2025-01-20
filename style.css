@@ -10,6 +10,13 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Navbar Styles */
+
 .logo {
   display: flex;
   background-color: #f0f0f0;
@@ -75,15 +82,31 @@ nav li:nth-child(5) {
   cursor: pointer;
 }
 
+.horizontal-line {
+  border: 1px solid orange;
+  opacity: 20%;
+  margin: 20px 0;
+}
+
 /* Navbar Mobile Device */
-@media (min-width: 769px) {
+@media (min-width: 776px) {
   .bars {
     display: none;
   }
+
+  .horizontal-line {
+    display: none;
+  }
+
+  .bars {
+    margin-right: 0px;
+  }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 776px) {
   .logo {
     display: flex;
+    justify-content: space-between;
     background-color: #f0f0f0;
     padding: 10px 0;
     width: 202px;
@@ -97,12 +120,93 @@ nav li:nth-child(5) {
     display: none;
   }
 
+  .school-text {
+    display: none;
+  }
+
   .bars {
     display: block;
     padding: 10px;
     border: none;
-    margin-right: 20px;
     margin-top: 20px;
     cursor: pointer;
+  }
+}
+
+/* Banner Section */
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.text-content {
+  width: 50%;
+  margin-left: 25px;
+  margin-right: 40px;
+  margin-top: 100px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.orange-text {
+  color: orange;
+}
+.skyblue-text {
+  color: skyblue;
+}
+
+.para {
+  margin-top: 20px;
+}
+
+.img-content {
+  width: 478px;
+  height: 575px;
+  margin-right: 20px;
+}
+
+.btn-black {
+  background-color: black;
+  font-weight: bold;
+  width: 167px;
+  height: 50px;
+  border: none;
+  padding: 8px;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Mobile Device Banner */
+
+@media (max-width: 776px) {
+  .content {
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .text-content {
+    grid-area: text;
+  }
+
+  .image-content {
+    grid-area: image;
+  }
+
+  .para {
+    font-weight: 500;
   }
 }
