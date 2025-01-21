@@ -426,7 +426,7 @@ nav li:nth-child(5) {
 .date {
   position: absolute;
   bottom: 120px;
-  right: 100px;
+  right: 150px;
   border: none;
   background-color: #5d58f0;
   color: white;
@@ -520,7 +520,7 @@ nav li:nth-child(5) {
   .date {
     position: absolute;
     bottom: 60px;
-    right: 100px;
+    right: 140px;
     border: none;
     background-color: #5d58f0;
     color: white;
