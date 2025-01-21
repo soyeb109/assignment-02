@@ -482,9 +482,9 @@ nav li:nth-child(5) {
   transform: translateY(-3px);
 }
 
-/* Mobile Device fror Stories*/
+/* Mobile Device for Stories*/
 
-@media (min-width: 777px) {
+@media (min-width: 778px) {
   .card-res {
     display: none;
   }
