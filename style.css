@@ -265,16 +265,19 @@ nav li:nth-child(5) {
   color: #64c8ff;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 .btn-read-more-yellow {
   color: #f0aa00;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 .btn-read-more-purple {
   color: #8700ff;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .arrow {
@@ -471,6 +474,7 @@ nav li:nth-child(5) {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .viewall-btn:hover {
@@ -526,5 +530,93 @@ nav li:nth-child(5) {
 
   .date-diff {
     background-color: #95b226;
+  }
+}
+
+/* Footer Styles */
+
+.footer {
+  background-color: #01acfd;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  display: flex;
+
+  padding: 10px;
+  width: 100px;
+  height: 72px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.footer-logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  margin-left: 10px;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.footer-about {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: start;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00bfff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 776px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
   }
 }
