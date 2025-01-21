@@ -620,3 +620,11 @@ nav li:nth-child(5) {
     margin-bottom: 20px;
   }
 }
+
+/* marquee */
+
+marquee {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
